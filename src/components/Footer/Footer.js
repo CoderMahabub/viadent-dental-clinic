@@ -10,7 +10,7 @@ const Footer = () => {
     const emailIcon = <FontAwesomeIcon icon={faEnvelope} />
     const arrowRight = <FontAwesomeIcon icon={faArrowRight} />
     return (
-        <div className="border">
+        <div className="border  border-secondary border-bottom-0 border-start-0 border-end-0">
             <Container>
                 <Row className="py-3">
                     <Col className="text-start p-3">
