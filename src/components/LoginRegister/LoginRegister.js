@@ -45,7 +45,7 @@ const LoginRegister = () => {
                 <Button className="btn btn-sm ms-1" onClick={handleResetPassword} variant="dark">Click to reset password</Button>
             </Form>
             <hr />
-            <fieldset>You Can Also</fieldset>
+            <fieldset>You Can Also SignIn</fieldset>
             <button onClick={signInUsingGoogle} className="btn btn-success text-center"> Login using Google</button>
         </div>
     );

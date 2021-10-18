@@ -12,12 +12,12 @@ const Footer = () => {
         <div className="border  border-secondary border-bottom-0 border-start-0 border-end-0">
             <Container>
                 <Row className="py-2">
-                    <Col className="text-start p-3">
+                    <Col className="col-12 col-md-4 col-lg-4 text-start p-3">
                         <img className="mb-4" src={footerLogo} alt="" />
                         <p>ViaDent is a leading dental care clinic in Bangladesh with a huge success in recent years.</p>
                         <p> <span className="text-primary">{phoneIcon} </span> House# 65, Sector 10, Dhaka</p>
                     </Col>
-                    <Col className="d-flex flex-column mt-4 text-decoration-none">
+                    <Col className="col-12 col-md-4 col-lg-4 d-flex flex-column mt-4 text-decoration-none">
                         <h3 className="fw-bold"><u>Quick Links</u></h3>
                         <Link className="text-decoration-none text-dark" to="/home"> Home</Link>
                         <Link className="text-decoration-none text-dark" to="/home#services"> Services</Link>
@@ -25,7 +25,7 @@ const Footer = () => {
                         <Link className="text-decoration-none text-dark" to="/about"> About Us</Link>
                         <Link className="text-decoration-none text-dark" to="/contact">Contact Us</Link>
                     </Col>
-                    <Col className="d-flex flex-column mt-4 text-start">
+                    <Col className="col-12 col-md-4 col-lg-4 d-flex flex-column mt-4 text-start">
                         <h3 className="fw-bold"><u>Make an Appointment</u></h3>
                         <p>You can/mail call us 24/7. We are glad to receive your appointment.</p>
                         <p> <span className="text-primary">{emailIcon} </span> support@viadent.com</p>

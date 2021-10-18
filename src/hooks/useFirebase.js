@@ -34,7 +34,6 @@ const useFirebase = () => {
             .then(result => {
                 setUser(result.user);
                 setSuccess('Thank You! Successfully Logged In');
-
             })
             .catch(error => {
                 setError(error.message);
@@ -111,7 +110,7 @@ const useFirebase = () => {
                 setError(error.message);
             })
     }
-
+    console.log(user);
     //Send Email Verification
     const verifyEmail = () => {
         sendEmailVerification(auth.currentUser)
