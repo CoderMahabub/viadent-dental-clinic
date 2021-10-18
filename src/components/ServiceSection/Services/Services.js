@@ -1,19 +1,12 @@
 import React from 'react';
-import { useEffect, useState } from "react";
 import { Row } from 'react-bootstrap';
+import useServices from '../../../hooks/useServices';
 import Service from '../Service/Service';
 
 const Services = () => {
-    const [services, setServices] = useState([]);
-
-
-    useEffect(() => {
-        fetch('services.json')
-            .then(res => res.json())
-            .then(data => setServices(data))
-    }, [])
+    const [services] = useServices();
     return (
-        <div className="container py-5">
+        <div className="container py-5" id="services">
             <div className="py-5">
                 <h4>Our Services</h4>
                 <h1>What Service We Offer</h1>

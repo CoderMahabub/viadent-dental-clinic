@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Service.css';
 
 const Service = ({ service }) => {
@@ -13,7 +14,8 @@ const Service = ({ service }) => {
                     <Card.Text>
                         {sDescription.slice(0, 100)}
                     </Card.Text>
-                    <button className="btn btn-primary rounded">Service Detail</button>
+                    <Link to={`/service/${serviceId}`}>
+                        <button className="btn btn-primary rounded">Service Detail</button></Link>
                 </Card.Body>
             </Card>
         </Col>
