@@ -9,7 +9,7 @@ const Footer = () => {
     const phoneIcon = <FontAwesomeIcon icon={faPhone} />
     const emailIcon = <FontAwesomeIcon icon={faEnvelope} />
     return (
-        <div className="border  border-secondary border-bottom-0 border-start-0 border-end-0">
+        <div className="border bg-light border-secondary border-bottom-0 border-start-0 border-end-0">
             <Container>
                 <Row className="py-2">
                     <Col className="col-12 col-md-4 col-lg-4 text-start p-3">

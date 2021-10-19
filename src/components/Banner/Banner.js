@@ -49,7 +49,7 @@ const Banner = () => {
                     <h3 className="text-primary fw-bold fs-2">About Us</h3>
                     <p className="text-primary fw-bold">To know more in detail, don't forget to contact us.</p>
                     <Button variant="primary">
-                        <Link className="text-decoration-none text-light" to="/home#services"> About Us</Link>
+                        <Link className="text-decoration-none text-light" to="/home#about"> About Us</Link>
                     </Button>
                 </Carousel.Caption>
             </Carousel.Item>

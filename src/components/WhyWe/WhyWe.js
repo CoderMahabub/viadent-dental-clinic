@@ -7,7 +7,7 @@ import icon3 from '../../Images/icons/3.png';
 
 const WhyWe = () => {
     return (
-        <div className="bg-light mb-5 pb-5 px-5">
+        <div id="about" className="bg-light pb-5 px-5">
             <div className="py-5">
                 <h4 className="text-primary">Why Choose Us</h4>
                 <h1 className="fw-bold">Key To Success</h1>
