@@ -33,7 +33,7 @@ const CustomerReview = () => {
                             <Carousel.Caption className="text-dark">
                                 <i>"Hospital staff are friendly and ensure that I am properly informed about my health and care. I would have no qualms in recommending them to friendly and friends"</i>
                                 <br />
-                                <img className="pro-img" src={Alessia} alt="" />
+                                <img className="pro-img" src={Dwayne} alt="" />
                                 <h5 className="fw-bold">Alessia Morin</h5>
                                 <p>HR Manager</p>
                             </Carousel.Caption>
@@ -63,7 +63,7 @@ const CustomerReview = () => {
                             <Carousel.Caption className="text-dark">
                                 <i>"Wonderful experience with (Clinic name). Dr. (Name) was a wonderful surgeon, and the staff was always helpful and kind. They ensured I had a smooth prep, surgery, and follow-up."</i>
                                 <br />
-                                <img className="pro-img" src={Alessia} alt="" />
+                                <img className="pro-img" src={Oliver} alt="" />
                                 <h5 className="fw-bold">Oliver Gomez</h5>
                                 <p>SEO & Manager</p>
                             </Carousel.Caption>
