@@ -1,0 +1,13 @@
+[
+    {
+      "PatientId": 1,
+      "pDoctorName": "Dr. Jonathan Kim",
+      "pService": "Dental Crown",
+      "pPaidAmount": 1500,
+      "pTotalAmount": 5000,
+      "pTotalMeet": 5,
+      "pAlreadyMet": 3,
+      "pImage": "https://i.ibb.co/2S3tX5V/1.png",
+      "pDescription":"Tooth decay or eating sticky foods could cause your crown to become loose. If this happens, you should contact your dentist immediately. This is because the loose crown allows bacteria to leak into your remaining tooth, causing further decay and damage. Porcelain is not as tough as your natural teeth. Therefore, dental crowns made of porcelain or porcelain infused metal can sometimes chip, though this is rare. If the chip is small, your dentist can use composite resin to repair the crown. However, if the chip or crack is extensive, the only solution is to replace the crown."
+    }
+  ]

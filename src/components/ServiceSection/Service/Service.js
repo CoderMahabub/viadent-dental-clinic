@@ -7,7 +7,7 @@ const Service = ({ service }) => {
     const { serviceId, sName, sImage, sDescription } = service;
     return (
         <Col>
-            <Card>
+            <Card className="py-3">
                 <Card.Img className="service-img" variant="top" src={sImage} />
                 <Card.Body>
                     <Card.Title>{sName}</Card.Title>

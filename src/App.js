@@ -9,6 +9,8 @@ import ServiceDetail from './components/ServiceSection/ServiceDetail/ServiceDeta
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import LoginRegister from './components/LoginRegister/LoginRegister';
 import Contact from './components/Contact/Contact';
+import PatientHistory from './components/PatientHistory/PatientHistory';
+import Appointment from './components/Appointment/Appointment';
 
 function App() {
   return (
@@ -28,6 +30,12 @@ function App() {
             </Route>
             <PrivateRoute path="/service/:serviceId">
               <ServiceDetail></ServiceDetail>
+            </PrivateRoute>
+            <PrivateRoute path="/appointment">
+              <Appointment></Appointment>
+            </PrivateRoute>
+            <PrivateRoute path="/patient-history">
+              <PatientHistory></PatientHistory>
             </PrivateRoute>
             <Route path="/contact">
               <Contact></Contact>

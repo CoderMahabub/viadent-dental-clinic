@@ -110,7 +110,7 @@ const useFirebase = () => {
                 setError(error.message);
             })
     }
-    console.log(user);
+
     //Send Email Verification
     const verifyEmail = () => {
         sendEmailVerification(auth.currentUser)

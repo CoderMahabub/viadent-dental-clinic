@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     const { logOut, user } = useAuth();
-    console.log(user.displayName);
     return (
         <>
             <Navbar collapseOnSelect expand="lg" sticky="top" className="border border-secondary border-top-0 border-start-0 border-end-0 bg-light">
@@ -26,6 +25,8 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                         <Nav.Link as={HashLink} to="/home#banner">Home</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#services">services</Nav.Link>
+                        <Nav.Link as={HashLink} to="/appointment">Appointment</Nav.Link>
+                        <Nav.Link as={HashLink} to="/patient-history">Patient History</Nav.Link>
                         <Nav.Link as={HashLink} to="/contact">Contact Us</Nav.Link>
                         {
                             user.displayName ? <Navbar.Text>
