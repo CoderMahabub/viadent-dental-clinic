@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Service.css';
@@ -10,7 +9,7 @@ const Service = ({ service }) => {
             <Card className="py-3">
                 <Card.Img className="service-img" variant="top" src={sImage} />
                 <Card.Body>
-                    <Card.Title>{sName}</Card.Title>
+                    <Card.Title className="fw-bold fs-4 pb-2">{sName}</Card.Title>
                     <Card.Text>
                         {sDescription.slice(0, 100)}
                     </Card.Text>

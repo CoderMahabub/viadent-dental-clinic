@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import useServices from '../../../hooks/useServices';
 import './ServiceDetail.css';
 
@@ -23,7 +24,9 @@ const ServiceDetail = () => {
                             <h6>Total Meets Needed: <span className="text-light rounded fw-bolder bg-dark px-2">{serviceDetail?.sMeets}</span></h6>
 
                         </div>
-                        <button className="btn btn-primary ms-3">Click here to book a service</button>
+                        <Link to="/appointment">
+                            <button className="btn btn-primary ms-3">Take an Appointment</button>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,8 @@
 .service-img{
-    margin: auto;;
+    margin: auto;
     width: 100px;
     height: auto;
-    padding: 15px;
+    padding: 10px;
     border-radius: 50%;
     border: 3px dashed #0B5ED7;
 }
