@@ -11,7 +11,7 @@ const WhyWe = () => {
             <div className="py-5">
                 <h4 className="text-primary">Why Choose Us</h4>
                 <h1 className="fw-bold">Key To Success</h1>
-                <span>At ViaDent Dental Clinic, we make caring for your smile convenient and have a wide array of treatments to meet all of your dental needs.</span>
+                <span className="text-secondary">At ViaDent Dental Clinic, we make caring for your smile convenient and have a wide array of treatments to meet all of your dental needs.</span>
             </div>
             <CardGroup>
                 <Card className="py-3 mx-2">

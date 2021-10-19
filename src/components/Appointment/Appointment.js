@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarCheck } from '@fortawesome/free-solid-svg-icons'
 import { Col, Row, Toast } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../hooks/useAuth';
 import './Appointment.css';
 
 const Appointment = () => {
+    const appointment = <FontAwesomeIcon icon={faCalendarCheck} />
     const [show, setShow] = useState(false);
     const { register, handleSubmit, formState: { errors } } = useForm();
     const { user } = useAuth();
@@ -32,7 +35,7 @@ const Appointment = () => {
             <div className="d-flex justify-content-center">
 
                 <form className="shipping-form  bg-light p-5" onSubmit={handleSubmit(onSubmit)}>
-                    <h1 className="fw-bold"><u>Appointment</u></h1>
+                    <h1 className="fw-bold text-primary">{appointment}<u> Appointment</u></h1>
                     <input defaultValue={user?.displayName} {...register("name")} />
                     <input defaultValue={user?.email} {...register("email", { required: true })} />
                     {errors.email && <span className="error">This field is required</span>}

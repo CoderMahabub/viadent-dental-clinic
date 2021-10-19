@@ -1,8 +1,19 @@
-.service-img{
+.service-img-top{
     margin: auto;
     width: 100px;
     height: auto;
     padding: 10px;
     border-radius: 50%;
     border: 3px dashed #0B5ED7;
+    transition: 0.4s;
+}
+.service-card{
+    min-height: 100px;
+}
+.service-card:hover{
+box-shadow: 5px 8px 15px 1px rgba(0,0,0,0.253);
+}
+
+.service-img-top:hover{
+    background-color:#EEFFFD;
 }

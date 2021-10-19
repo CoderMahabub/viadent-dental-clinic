@@ -17,6 +17,7 @@ const LoginRegister = () => {
     } = useAuth();
     return (
         <div className="container w-50 my-4 bg-light rounded py-4 text-start text-dark">
+            <p className="text-info text-center fw-bold fs-5">{success}</p>
             <h1 className="text-center text-primary fw-bolder"><u>Please {isLoggedIn ? 'LogIn' : 'Register'}</u></h1>
             <Form onSubmit={handleRegistration}>
                 {!isLoggedIn && <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -37,7 +38,6 @@ const LoginRegister = () => {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <p className="text-danger text-center fw-bold">{error}</p>
-                    <p className="text-info text-center fw-bold">{success}</p>
                 </Form.Group>
                 <Button variant="success" type="submit">
                     {isLoggedIn ? 'Click here to LogIn' : 'Click here to Register'}
