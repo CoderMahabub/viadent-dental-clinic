@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Col, Row, Toast } from 'react-bootstrap';
+import { Col, Row, Toast } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../hooks/useAuth';
 import './Appointment.css';

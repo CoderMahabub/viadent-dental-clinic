@@ -60,15 +60,15 @@ const Contact = () => {
                     </div>
                     <div className="col-md-3 text-center">
                         <ul className="list-unstyled mb-0">
-                            <li><i>{locationIcon}</i>
-                                <p>San Francisco, CA 94126, USA</p>
+                            <li><i className="text-primary">{locationIcon}</i>
+                                <p>Uttara Model Town, Dhaka</p>
                             </li>
 
-                            <li><i>{phoneIcon}</i>
-                                <p>+ 01 234 567 89</p>
+                            <li><i className="text-primary">{phoneIcon}</i>
+                                <p>+ 0181 234 567 89</p>
                             </li>
-                            <li><i>{messageIcon}</i>
-                                <p>contact@mdbootstrap.com</p>
+                            <li><i className="text-primary">{messageIcon}</i>
+                                <p>contact@viadent.com</p>
                             </li>
                         </ul>
                     </div>

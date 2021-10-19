@@ -16,7 +16,7 @@ const LoginRegister = () => {
         handleNameChange
     } = useAuth();
     return (
-        <div className="container w-50 my-4 bg-light rounded p-4 text-start text-dark">
+        <div className="container w-50 my-4 bg-light rounded py-4 text-start text-dark">
             <h1 className="text-center text-primary fw-bolder"><u>Please {isLoggedIn ? 'LogIn' : 'Register'}</u></h1>
             <Form onSubmit={handleRegistration}>
                 {!isLoggedIn && <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -42,11 +42,11 @@ const LoginRegister = () => {
                 <Button variant="success" type="submit">
                     {isLoggedIn ? 'Click here to LogIn' : 'Click here to Register'}
                 </Button>
-                <Button className="btn btn-sm ms-1" onClick={handleResetPassword} variant="dark">Click to reset password</Button>
+                <Button className="btn btn-sm ms-1 mt-1" onClick={handleResetPassword} variant="dark">Click to reset password</Button>
             </Form>
             <hr />
             <fieldset>You Can Also SignIn</fieldset>
-            <button onClick={signInUsingGoogle} className="btn btn-success text-center"> Login using Google</button>
+            <button onClick={signInUsingGoogle} className="btn btn-success text-center mt-1"> Login using Google</button>
         </div>
     );
 };

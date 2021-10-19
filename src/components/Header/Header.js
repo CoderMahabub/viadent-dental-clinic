@@ -5,6 +5,7 @@ import logo from "../../Images/viadent.png";
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../hooks/useAuth';
 import { Link } from 'react-router-dom';
+import randomUser from '../../Images/user.png';
 
 const Header = () => {
     const { logOut, user } = useAuth();
@@ -12,7 +13,7 @@ const Header = () => {
         <>
             <Navbar collapseOnSelect expand="lg" sticky="top" className="border border-secondary border-top-0 border-start-0 border-end-0 bg-light">
                 <Container>
-                    <Navbar.Brand as={HashLink} to="/home#banner">
+                    <Navbar.Brand as={HashLink} to="/home">
                         <img
                             src={logo}
                             width="90%"
@@ -31,7 +32,8 @@ const Header = () => {
                         {
                             user.displayName ? <Navbar.Text>
                                 {
-                                    user.displayName && <img className="profile-img ms-1" src={user.photoURL} alt="" />
+                                    user.photoURL ? <img className="profile-img ms-1" src={user.photoURL} alt="" />
+                                        : <img className="profile-img ms-1" src={randomUser} alt="" />
                                 }
                                 <span className="text-primary"> {user.displayName}</span>
                                 <Link to="/home">
