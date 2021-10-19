@@ -24,6 +24,7 @@ const useFirebase = () => {
     const [password, setPassword] = useState('');
     const [isLoggedIn, setIsloggedIn] = useState(false);
     const [success, setSuccess] = useState('');
+    const [Loading, setLoading] = useState(true);
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -136,6 +137,7 @@ const useFirebase = () => {
             else {
                 setUser({})
             }
+            setLoading(false);
         });
         return unsubscribe;
     }, [])
@@ -156,7 +158,8 @@ const useFirebase = () => {
         toggleLogIn,
         isLoggedIn,
         success,
-        handleResetPassword
+        handleResetPassword,
+        Loading
     }
 }
 
