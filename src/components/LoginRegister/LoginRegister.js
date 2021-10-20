@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
+import { useHistory, useLocation } from 'react-router';
 
 const LoginRegister = () => {
     const {
@@ -15,6 +16,18 @@ const LoginRegister = () => {
         handleResetPassword,
         handleNameChange
     } = useAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home';
+
+    // Google Login Redirect to Destination URI
+    const handleGoogleLogIn = () => {
+        signInUsingGoogle()
+            .then(result => {
+                history.push(redirect_uri);
+            })
+    }
     return (
         <div className="container w-50 my-4 bg-light rounded py-4 text-start text-dark">
             <p className="text-info text-center fw-bold fs-5">{success}</p>
@@ -48,7 +61,7 @@ const LoginRegister = () => {
             </Form>
             <hr />
             <fieldset>You Can Also SignIn</fieldset>
-            <button onClick={signInUsingGoogle} className="btn btn-success text-center mt-1"> Login using Google</button>
+            <button onClick={handleGoogleLogIn} className="btn btn-success text-center mt-1"> Login using Google</button>
         </div>
     );
 };

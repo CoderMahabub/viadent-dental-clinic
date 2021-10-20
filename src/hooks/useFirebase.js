@@ -31,14 +31,15 @@ const useFirebase = () => {
 
     //SignIn Using Google
     const signInUsingGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user);
-                setSuccess('Thank You! Successfully Logged In');
-            })
-            .catch(error => {
-                setError(error.message);
-            })
+        return signInWithPopup(auth, googleProvider)
+        // signInWithPopup(auth, googleProvider)
+        //     .then(result => {
+        //         setUser(result.user);
+        //         setSuccess('Thank You! Successfully Logged In');
+        //     })
+        //     .catch(error => {
+        //         setError(error.message);
+        //     })
     }
 
 
