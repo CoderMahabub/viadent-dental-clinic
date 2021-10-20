@@ -36,6 +36,12 @@ const LoginRegister = () => {
         <div className="container w-50 my-4 bg-light rounded py-4 text-start text-dark">
             <p className="text-info text-center fw-bold fs-5">{success}</p>
             <h1 className="text-center text-primary fw-bolder"><u>Please {isLoggedIn ? 'LogIn' : 'Register'}</u></h1>
+            <hr />
+            <div className="text-center">
+                <button onClick={handleGoogleLogIn} className="btn btn-sm btn-success text-light fs-5 me-1">LogIn Using Google</button>
+                <div>=====OR=====</div>
+                <br />
+            </div>
             <Form onSubmit={handleRegistration}>
                 {!isLoggedIn && <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>FullName</Form.Label>
@@ -55,7 +61,6 @@ const LoginRegister = () => {
                     {isLoggedIn && <Button className="btn btn-sm ms-1 mt-1" onClick={handleResetPassword} variant="dark">Reset Password</Button>
                     }
                 </Form.Group>
-
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <p className="text-danger text-center fw-bold">{error}</p>
                 </Form.Group>
@@ -63,9 +68,6 @@ const LoginRegister = () => {
                     {isLoggedIn ? 'LogIn' : 'Register'}
                 </Button>
             </Form>
-            <hr />
-            <fieldset>You Can Also SignIn</fieldset>
-            <button onClick={handleGoogleLogIn} className="btn btn-success text-center mt-1"> Login using Google</button>
         </div>
     );
 };
