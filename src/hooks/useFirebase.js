@@ -32,16 +32,8 @@ const useFirebase = () => {
     //SignIn Using Google
     const signInUsingGoogle = () => {
         return signInWithPopup(auth, googleProvider)
-        // signInWithPopup(auth, googleProvider)
-        //     .then(result => {
-        //         setUser(result.user);
-        //         setSuccess('Thank You! Successfully Logged In');
-        //     })
-        //     .catch(error => {
-        //         setError(error.message);
-        //     })
-    }
 
+    }
 
     // Logout User
     const logOut = () => {
@@ -86,6 +78,7 @@ const useFirebase = () => {
             .then(result => {
                 setError('');
                 setUser(result.user);
+                setSuccess('Successfully Logged In');
                 verifyEmail();
                 setUserName();
             })
@@ -105,7 +98,7 @@ const useFirebase = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
                 setError('');
-                setSuccess('');
+                setSuccess('Successfully Logged In');
                 setUser(result.user);
             })
             .catch(error => {
@@ -142,7 +135,6 @@ const useFirebase = () => {
         });
         return unsubscribe;
     }, [])
-
 
     // Return Required Field 
     return {
