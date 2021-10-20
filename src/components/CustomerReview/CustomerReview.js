@@ -13,10 +13,10 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 const CustomerReview = () => {
     const quote = <FontAwesomeIcon icon={faQuoteLeft} />
     return (
-        <div className="my-4 pb-5 testimonialSlider">
-            <Row className="row g-0">
+        <div className="py-5 testimonialSlider">
+            <Row className="row g-0 d-flex justify-content-center align-items-center">
                 <Col className="col-12 col-lg-6">
-                    <img className="img-fluid" src={review} alt="" />
+                    <img className="img-fluid img-height" src={review} alt="" />
                 </Col>
                 <Col className="col-12 col-lg-6 testimonial py-5 d-flex justify-content-center text-center flex-column">
                     <h4 className="text-primary">Testimonial</h4>
