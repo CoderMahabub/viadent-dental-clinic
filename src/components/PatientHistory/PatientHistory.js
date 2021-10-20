@@ -4,6 +4,7 @@ import { faUserMd, faUser, faInfoCircle } from '@fortawesome/free-solid-svg-icon
 import { Card } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 import './PatientHistory.css';
+import fakePhoto from '../../Images/user.png';
 
 const PatientHistory = () => {
     const { user } = useAuth();
@@ -16,19 +17,22 @@ const PatientHistory = () => {
     //Font Awesome Icons
     const dr = <FontAwesomeIcon icon={faUserMd} />
     const fauser = <FontAwesomeIcon icon={faUser} />
-    const fainfo = <FontAwesomeIcon icon={faInfoCircle} />
+    const faInfo = <FontAwesomeIcon icon={faInfoCircle} />
     return (
         <div className="bg-dark py-5">
             <Card className="container text-center">
                 <Card.Header className="fs-3"><b> PATIENT DETAIL</b></Card.Header>
                 <Card.Body className="text-start">
                     <div className="card mb-3">
-                        <img src={user?.photoURL} className="card-img-top" alt="..." />
+                        {
+                            user?.photoURL ? <img src={user?.photoURL} className="card-img-top" alt="p" />
+                                : <img src={fakePhoto} className="card-img-top" alt="p" />
+                        }
                         <div className="card-body">
                             <h3 className="card-title fw-bold">{fauser} {user?.displayName}</h3>
                             <h6 className="card-title">{user?.email}</h6>
-                            <div className="d-flex align-items-center justify-content-center">
-                                <p className="card-text text-start px-3">{fainfo} <b> Patient Detail:</b>{patient.pDescription}</p>
+                            <div className="d-lg-flex align-items-center justify-content-center">
+                                <p className="card-text text-start px-3">{faInfo} <b> Patient Detail:</b>{patient.pDescription}</p>
                                 <img className="patient-imgg" src={patient.pImage} alt="" />
                             </div>
                             <h6><span><b>Total Meetings:</b> {patient.pTotalMeet}</span><span> ({patient.pAlreadyMet} Times Met)</span></h6>

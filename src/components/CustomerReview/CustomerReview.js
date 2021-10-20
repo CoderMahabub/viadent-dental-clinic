@@ -14,14 +14,14 @@ const CustomerReview = () => {
     const quote = <FontAwesomeIcon icon={faQuoteLeft} />
     return (
         <div className="my-4 pb-5 testimonialSlider">
-            <Row className="row">
-                <Col className="col-12 col-md-6 col-lg-6">
+            <Row className="row g-0">
+                <Col className="col-12 col-lg-6">
                     <img className="img-fluid" src={review} alt="" />
                 </Col>
-                <Col className="col-12 col-md-6 col-lg-6 testimonial py-4">
+                <Col className="col-12 col-lg-6 testimonial py-5 d-flex justify-content-center text-center flex-column">
                     <h4 className="text-primary">Testimonial</h4>
                     <h2 className="fw-bold">What Customer Says</h2>
-                    <b className="text-primary fs-2">{quote}</b>
+                    <b className="text-primary fs-2 mb">{quote}</b>
                     <Carousel>
                         <Carousel.Item>
                             <img
@@ -69,7 +69,6 @@ const CustomerReview = () => {
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
-
                 </Col>
             </Row>
         </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import footerLogo from '../../Images/viadent.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
