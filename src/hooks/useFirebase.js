@@ -62,6 +62,7 @@ const useFirebase = () => {
         setPassword(e.target.value);
     }
 
+    //Handle Registration
     const handleRegistration = (e) => {
         e.preventDefault();
         if (!/(?=.*[A-Z])/.test(password)) {

@@ -9,7 +9,6 @@ import Oliver from '../../Images/testimonials/Oliver Gomez.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
-
 const CustomerReview = () => {
     const quote = <FontAwesomeIcon icon={faQuoteLeft} />
     return (
@@ -28,14 +27,13 @@ const CustomerReview = () => {
                                 className="d-block w-100"
                                 src={slider}
                                 alt="First slide"
-
                             />
                             <Carousel.Caption className="text-dark">
                                 <i>"Hospital staff are friendly and ensure that I am properly informed about my health and care. I would have no qualms in recommending them to friendly and friends"</i>
                                 <br />
                                 <img className="pro-img" src={Dwayne} alt="" />
                                 <h5 className="fw-bold">Alessia Morin</h5>
-                                <p>HR Manager</p>
+                                <p>Patient (Teeth Implants)</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -44,13 +42,12 @@ const CustomerReview = () => {
                                 src={slider}
                                 alt="Second slide"
                             />
-
                             <Carousel.Caption className="text-dark">
                                 <i>"viadent did a great job with my first ever health exam. She explained everything to me in a very clear manner. She was also kind and friendly. All of the staff was great – they were helpful, patient and helped with my insurance."</i>
                                 <br />
                                 <img className="pro-img" src={Alessia} alt="" />
                                 <h5 className="fw-bold">Dwayne Lake</h5>
-                                <p>Entrepreneur</p>
+                                <p>Patient (Dental Crown)</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -59,13 +56,12 @@ const CustomerReview = () => {
                                 src={slider}
                                 alt="Third slide"
                             />
-
                             <Carousel.Caption className="text-dark">
                                 <i>"Wonderful experience with (Clinic name). Dr. (Name) was a wonderful surgeon, and the staff was always helpful and kind. They ensured I had a smooth prep, surgery, and follow-up."</i>
                                 <br />
                                 <img className="pro-img" src={Oliver} alt="" />
                                 <h5 className="fw-bold">Oliver Gomez</h5>
-                                <p>SEO & Manager</p>
+                                <p>Patient (Teeth Whitening)</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
