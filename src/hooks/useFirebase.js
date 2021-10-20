@@ -160,7 +160,8 @@ const useFirebase = () => {
         isLoggedIn,
         success,
         handleResetPassword,
-        Loading
+        Loading,
+        setError
     }
 }
 

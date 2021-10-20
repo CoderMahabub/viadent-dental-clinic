@@ -14,7 +14,8 @@ const LoginRegister = () => {
         isLoggedIn,
         success,
         handleResetPassword,
-        handleNameChange
+        handleNameChange,
+        setError
     } = useAuth();
 
     const location = useLocation();
@@ -26,6 +27,9 @@ const LoginRegister = () => {
         signInUsingGoogle()
             .then(result => {
                 history.push(redirect_uri);
+            })
+            .catch(error => {
+                setError(error.message);
             })
     }
     return (
